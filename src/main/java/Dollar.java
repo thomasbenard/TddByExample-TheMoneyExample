@@ -10,12 +10,6 @@ public class Dollar extends Money {
     }
 
     @Override
-    public boolean equals(Object o) {
-        Dollar dollar = (Dollar) o;
-        return amount == dollar.amount;
-    }
-
-    @Override
     public int hashCode() {
         return Objects.hash(amount);
     }
