@@ -11,6 +11,11 @@ public class Dollar extends Money {
     }
 
     @Override
+    String currency() {
+        return null;
+    }
+
+    @Override
     public int hashCode() {
         return Objects.hash(amount);
     }

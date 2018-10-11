@@ -11,6 +11,8 @@ abstract public class Money {
 
     abstract Money times(int multiplier);
 
+    abstract String currency();
+
     @Override
     public boolean equals(Object o) {
         Money money = (Money) o;
