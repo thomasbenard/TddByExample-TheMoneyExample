@@ -2,8 +2,7 @@ import java.util.Objects;
 
 public class Franc extends Money{
     public Franc(int amount, String currency) {
-        this.amount = amount;
-        this.currency = currency;
+        super(amount, currency);
     }
 
     @Override
