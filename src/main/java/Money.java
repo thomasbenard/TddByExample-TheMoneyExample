@@ -1,8 +1,8 @@
-abstract public class Money {
+public class Money {
     protected int amount;
     protected String currency;
 
-    Money(int amount, String currency) {
+    public Money(int amount, String currency) {
         this.amount = amount;
         this.currency = currency;
     }
@@ -15,7 +15,9 @@ abstract public class Money {
         return new Franc(amount, "CHF");
     }
 
-    abstract Money times(int multiplier);
+    Money times(int multiplier) {
+        return null;
+    }
 
     String currency() {
         return currency;
@@ -26,5 +28,10 @@ abstract public class Money {
         Money money = (Money) o;
         return amount == money.amount
                 && getClass().equals(money.getClass());
+    }
+
+    @Override
+    public String toString() {
+        return amount + " " + currency;
     }
 }
