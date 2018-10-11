@@ -12,11 +12,6 @@ public class Franc extends Money{
     }
 
     @Override
-    String currency() {
-        return currency;
-    }
-
-    @Override
     public int hashCode() {
         return Objects.hash(amount);
     }
