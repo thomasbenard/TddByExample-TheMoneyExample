@@ -5,3 +5,5 @@
 - Make "amount" private
 - ~~Dollar side-effect ?~~
 - Money rounding ?
+- **equals()**
+- hashCode()
