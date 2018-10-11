@@ -36,6 +36,6 @@ public class Money {
     }
 
     public Money plus(Money addend) {
-        return null;
+        return new Money(amount + addend.amount, currency);
     }
 }
