@@ -1,8 +1,10 @@
 import java.util.Objects;
 
 public class Dollar extends Money {
+
     public Dollar(int amount) {
         this.amount = amount;
+        this.currency = "USD";
     }
 
     @Override
@@ -12,7 +14,7 @@ public class Dollar extends Money {
 
     @Override
     String currency() {
-        return "USD";
+        return currency;
     }
 
     @Override

@@ -3,6 +3,7 @@ import java.util.Objects;
 public class Franc extends Money{
     public Franc(int amount) {
         this.amount = amount;
+        this.currency = "CHF";
     }
 
     @Override
@@ -12,7 +13,7 @@ public class Franc extends Money{
 
     @Override
     String currency() {
-        return "CHF";
+        return currency;
     }
 
     @Override
