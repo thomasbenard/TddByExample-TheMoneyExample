@@ -13,6 +13,12 @@ public class Dollar {
 
     @Override
     public boolean equals(Object o) {
-        return true;
+        Dollar dollar = (Dollar) o;
+        return amount == dollar.amount;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(amount);
     }
 }
