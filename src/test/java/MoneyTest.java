@@ -82,12 +82,6 @@ public class MoneyTest {
     }
 
     @Test
-    public void testPlusSameCurrencyReturnsMoney() {
-        Expression sum = Money.dollar(1).plus(Money.dollar(1));
-        assertTrue(sum instanceof Money);
-    }
-
-    @Test
     public void testPlusReturnsSum() {
         Money five = Money.dollar(5);
         Expression result = five.plus(five);
