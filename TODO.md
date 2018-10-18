@@ -7,7 +7,7 @@
 - ~~Reduce Money with conversion~~
 - ~~Reduce(Bank, String)~~
 - ~~Sum.plus~~
-- **Expression.times**
+- ~~Expression.times~~
 - ~~$5 * 2 = $10~~
 - ~~Make "amount" private~~
 - ~~Dollar side-effect ?~~
